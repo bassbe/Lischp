@@ -1,0 +1,18 @@
+;;;; Describe with 4 ;
+;;; basic comment 3
+;; for comment intented
+; for comment after a line of code
+
+;;(format t "Hello Worldd ~%")
+;;(print "Hello World")
+
+
+(print "Whats your name?")
+(defvar name (read))
+
+(defun hello-you (name)
+  (format "Hello ~a! ~%" name))
+
+(setq *print-case* :capitalize)
+
+(hello-you *name*)
